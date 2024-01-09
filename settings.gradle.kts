@@ -1,5 +1,8 @@
 pluginManagement {
-    val kotlinVersion: String by settings
+    plugins {
+        val kotlinVersion: String by settings
+        kotlin("jvm") version kotlinVersion
+    }
 }
 
 plugins {
